@@ -1,4 +1,5 @@
 import type { Route } from './+types/index';
+import Hero from '~/components/Hero';
 
 export function meta({}: Route.MetaArgs) {
   return [{ title: 'The Friendly Dev | Welcome' }, { name: 'description', content: 'An Awesome Portfolio' }];
@@ -7,7 +8,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <section>
-      <h1>Friendly Dev</h1>
+      <Hero name="Rémi" />
     </section>
   );
 }
